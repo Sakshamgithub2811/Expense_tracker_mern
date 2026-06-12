@@ -8,7 +8,6 @@ const generateToken = (id) => {
         expiresIn: "30d",
     });
 }
-
 //Register User 
 exports.registerUser = async (req, res) => {
     const { fullName, email, password, profileImageUrl } = req.body;
@@ -47,9 +46,9 @@ exports.registerUser = async (req, res) => {
             });
     }
 
-
+    
 };
-
+//login User 
 exports.loginUser = async (req, res) => {
   
         const { email, password } = req.body;
@@ -82,7 +81,7 @@ exports.loginUser = async (req, res) => {
     }
 
 };
-
+//get User Info
 exports.getUserInfo = async (req, res) => {
 
     try{
