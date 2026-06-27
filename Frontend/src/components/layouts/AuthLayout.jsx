@@ -1,6 +1,6 @@
 import React from 'react'
-import CARD_2 from "../../assets/images/CARD_2.jpg";
-import {LuTrendingUpDown} from "react-icons/lu";
+import CARD_1 from "../../assets/images/CARD_1.png";
+import { LuTrendingUpDown } from "react-icons/lu";
 
 const AuthLayout = ({ children }) => {
   return (
@@ -19,7 +19,7 @@ const AuthLayout = ({ children }) => {
             icon={<LuTrendingUpDown />}
             label="Track your Income & Expenses"
             value="430,000"
-            color="bg-primary"
+            color="bg-purple-600"
           />
 
 
@@ -28,7 +28,7 @@ const AuthLayout = ({ children }) => {
 
 
 
-        <img className="2-64 lg:w-[90%] absolute bottom-10 shadow-lg shadow-blue-400/15" src={CARD_2} alt="" />
+        <img className="2-64 lg:w-[90%] absolute bottom-10 shadow-lg shadow-blue-400/15" src={CARD_1} alt="" />
       </div>
 
 

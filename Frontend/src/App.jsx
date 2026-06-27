@@ -1,4 +1,3 @@
-
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,11 +10,12 @@ import Home from "./pages/Dashboard/Home";
 import Income from "./pages/Dashboard/Income";
 import Expense from "./pages/Dashboard/Expense";
 
+
 function App() {
 
 
   return (
-  
+ 
     <div>
       <Router>
         <Routes>
@@ -29,18 +29,20 @@ function App() {
         </Routes>
       </Router>
     </div>
+
   )
 }
 
 export default App;
 
 const Root = () =>{
-  const isAuthenticated = !!localStorage.getItem("token");
+  const isAuthenticated = false;
+  // const isAuthenticated = !!localStorage.getItem("token");
   console.log(isAuthenticated);
 
   return isAuthenticated ? (
     <Navigate to="/dashboard"/>
   ):(
-    <Navigate to ="/login" />
+    <Navigate to ="/signUp" />
   );
 };
